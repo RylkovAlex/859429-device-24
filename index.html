@@ -7,19 +7,24 @@
   <body>
     <div class="container">
 
-      <header class="index-header">
+      <header class="site-header">
         <div class="header-content">
-            <a class="logo"></a>
-            <form class="search-form" action="https://echo.htmlacademy.ru" method="POST"></form>
-            <div class="user-block">
-              <a href="#" class="singup">Войти</a>
+            <a class="logo">
+              <img src="img/svg/device-logo.svg" alt="логотип Device">
+            </a>
+            <form class="search-form" action="https://echo.htmlacademy.ru" method="POST">
+              <input class="search-form-input" id="search-form-input" type="text" placeholder="Поиск по сайту">
+              <button class="search-form-button" type="submit"></button>
+            </form>
+            <div class="user-block not-enter">
+              <a href="#" class="login">Войти</a>
               <a href="#">Сравнить</a>
               <a href="#" class="basket">Корзина</a>
             </div>
             <nav class="main-navigation">
                 <ul class="site-menu">
                   <li>
-                    <a class="catalog" href="#">Каталог товаров</a>
+                    <a class="catalog" href="catalog.html">Каталог товаров</a>
                     <ul class="catalog-navigation">
                       <li>
                         <a href="#">Виртуальная реальность</a>

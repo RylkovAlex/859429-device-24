@@ -317,7 +317,7 @@ a {
 }
 
 .catalog:hover > .catalog-navigation,
-.catalog-link:focus ~ .catalog-navigation {
+.catalog:focus > .catalog-navigation {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;

@@ -19,8 +19,14 @@
             </form>
             <div class="user-block not-enter">
               <a href="#" class="login">Войти</a>
-              <a href="#" class="compare">Сравнить</a>
-              <a href="#" class="cart">Корзина</a>
+              <ul class="user-block-options">
+                <li>
+                  <a href="#" class="compare">Сравнить</a>
+                </li>
+                <li>
+                  <a href="#" class="cart">Корзина</a>
+                </li>
+              </ul>
             </div>
             <nav class="main-navigation">
                 <ul class="site-menu">
@@ -241,7 +247,7 @@
             <h2>О нас</h2>
             <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
             <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
-            <ul class="delivery options">
+            <ul class="delivery-options">
               <li>Деловые Линии</li>
               <li>Автотрейдинг</li>
               <li>ЖелДорЭкспедиция</li>
@@ -261,19 +267,10 @@
       <footer class="site-footer">
         <div class="footer-container">
           <div class="footer-left-block">
-            <a href="#" class="footer-devicelogo-link">
-              <svg class="devicelogo" xmlns="http://www.w3.org/2000/svg" width="163" height="35" viewBox="0 0 163 35">
-                <defs>
-                    <style>
-                        .cls-1{fill-rule:evenodd}
-                    </style>
-                </defs>
-                <path id="_-e-logo" d="M-.151.702v33.6h13.532a15.72 15.72 0 0 0 11.72-4.824 16.458 16.458 0 0 0 4.712-11.976 16.458 16.458 0 0 0-4.712-11.976A15.723 15.723 0 0 0 13.381.702H-.151zM7.582 26.91V8.091h5.8a8.646 8.646 0 0 1 6.5 2.568 9.407 9.407 0 0 1 2.489 6.84 9.406 9.406 0 0 1-2.489 6.84 8.642 8.642 0 0 1-6.5 2.568h-5.8zm34.8-5.952h12.082v-7.3H42.378V8.091h13.291V.702H34.645v33.6H55.91V26.91H42.378v-5.952zm36.343 13.344L89.744.702h-8.458l-7.491 24.72L66.304.702h-8.457l11.019 33.6h9.859zm14.4 0h7.733V.702h-7.733v33.6zm38.615-1.416a15.506 15.506 0 0 0 6.041-5.688l-6.67-3.84a7.482 7.482 0 0 1-3.165 3.024 9.87 9.87 0 0 1-4.664 1.1 9.595 9.595 0 0 1-7.177-2.736 9.909 9.909 0 0 1-2.682-7.248 9.909 9.909 0 0 1 2.682-7.248 9.595 9.595 0 0 1 7.177-2.736 9.897 9.897 0 0 1 4.639 1.08 7.592 7.592 0 0 1 3.19 3.048l6.67-3.84a15.873 15.873 0 0 0-6.09-5.688 17.42 17.42 0 0 0-8.409-2.088c-9.779-.272-17.797 7.691-17.591 17.472-.208 9.781 7.809 17.747 17.588 17.476a17.52 17.52 0 0 0 8.458-2.088zm17.881-11.928h12.082v-7.3h-12.085V8.091h13.29V.702h-21.023v33.6h21.265V26.91h-13.532v-5.952z" class="cls-1" data-name="-e-logo"/>
-              </svg>
-            </a>
+            <a href="#" class="footer-devicelogo-link">Decice</a>
             <p>г. Москва, ул. Строителей, 15</p>
           </div>
-          <div class="footer-center-container">
+          <div class="footer-center-block">
             <ul class="footer-services-list">
               <li>
                 <a href="#">Доставка</a>
@@ -287,17 +284,17 @@
             </ul>
             <ul class="footer-social-list">
               <li>
-                <a href="#">Фейсбук</a>
+                <a class="fb" href="#">Фейсбук</a>
               </li>
               <li>
-                <a href="#">Инстаграм</a>
+                <a class="inst" href="#">Инстаграм</a>
               </li>
               <li>
-                <a href="#">Твиттер</a>
+                <a class="tw" href="#">Твиттер</a>
               </li>
             </ul>
           </div>
-          <div class="footer-right-container">
+          <div class="footer-right-block">
             <ul class="footer-user-block">
               <li><a href="#">Войти</a></li>
               <li><a href="#">Сравнить</a></li>
@@ -310,7 +307,7 @@
       </footer>
     </div>
     <!-- PopUps -->
-    <section class="create-message">
+    <section class="modal create-message">
       <form class="message-form" action="https://echo.htmlacademy.ru" method="POST">
         <label for="user-name">Ваше Имя:</label>
         <input class="user-name" id="user-name" name="user-name" type="text" placeholder="Имя Фамилия">
@@ -322,7 +319,7 @@
       </form>
       <button class="popup-close-button" type="button"></button>
     </section>
-    <section class="map-popup">
+    <section class="modal map-popup">
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1123749473672!2d37.527429316058075!3d55.6870340045298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1551979685788" width="960" height="559" frameborder="0" style="border:0" allowfullscreen></iframe>
       <button class="popup-close-button" type="button"></button>
     </section>

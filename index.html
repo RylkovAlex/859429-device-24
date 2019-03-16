@@ -8,8 +8,6 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body>
-    <div class="container">
-
       <header class="site-header">
         <div class="header-content">
             <a class="logo">
@@ -26,7 +24,7 @@
             </div>
             <nav class="main-navigation">
                 <ul class="site-menu">
-                  <li class="catalog" tabindex="0">
+                  <li class="catalog">
                     <a class="catalog-link" href="catalog.html">Каталог товаров</a>
                     <ul class="catalog-navigation">
                       <li>
@@ -65,72 +63,83 @@
 
       <main>
 
-        <div class="slider-container">
-          <section class="slide-1">
-            <img src="img/slider-1.png" alt="Фото товара: селфи палка" width="384" height="486">
+        <section class="slider-container">
+          <input class="visually-hidden" type="radio" id="slide-1" name="toggle" checked>
+          <input class="visually-hidden" type="radio" id="slide-2" name="toggle">
+          <input class="visually-hidden" type="radio" id="slide-3" name="toggle">
+          <div class="slider-controls">
+            <label for="slide-1">Первый слайд</label>
+            <label for="slide-2">Второй слайд</label>
+            <label for="slide-3">Третий слайд</label>
+          </div>
+          <div class="slide-1" id="test">
+            <div class="slide-img">
+              <img src="img/slider-1.png" alt="Фото товара: селфи палка" width="384" height="486">
+            </div>
             <div class="slider-textbox">
               <h2 class="slide-header">Делай селфи, как&#160;Бен&#160;Стиллер!</h2>  <!-- Здесь, возможно, лучше не <h2>, а просто <p> -->
-              <p class="slide-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+              <p class="slide-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь&#160;(Восемь, Карл!)&#160;метров длиной и весом всего 5 килограмм.</p>
               <a class="slide-button">Подробнее</a>
-              <ul class="slide-features">
-                <h3 class="visually hidden">Селфи палка: характеристики товара</h3>
-                <li>
-                  <p class="feature-property-value">8,5 м</p>
-                  <p class="feature-property">Длина палки</p>
-                </li>
-                <li>
-                  <p class="feature-property-value">5 кг</p>
-                  <p class="feature-property">Вес палки</p>
-                </li>
-                <li>
-                  <p class="feature-property-value">Карбон</p>
-                  <p class="feature-property">Материал</p>
-                </li>
-              </ul>
+              <h3 class="visually-hidden">Селфи палка: характеристики товара</h3>
+              <table class="slide-features">
+                <tr class="feature-property-value">
+                  <td>8,5 м</td>
+                  <td>5 кг</td>
+                  <td>Карбон</td>
+                </tr>
+                <tr class="feature-property">
+                  <td>Длина палки</td>
+                  <td>Вес палки</td>
+                  <td>Материал</td>
+                </tr>
+              </table>
             </div>
-          </section>
-          <section class="slide-2">
+          </div>
+          <div class="slide-2">
+            <div class="slide-img">
               <img src="img/slider-2.png" alt="Фото товара: фитнесc-браслет" width="345" height="485">
-              <div class="slider-textbox">
-                <h2 class="slide-header">Худеем правильно!</h2>
-                <p class="slide-description">Мотивирующие фитнесc-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-                <a class="slide-button">Подробнее</a>
-                <ul class="slide-features">
-                  <h3 class="visually hidden">Фитнесc-браслеты: характеристики товара</h3>
-                  <li>
-                    <p class="feature-property-value">48 часов</p>
-                    <p class="feature-property">Без подзарядки</p>
-                  </li>
-                </ul>
-              </div>
-          </section>
-          <section class="slide-3">
-            <img src="img/slider-3.png" alt="Фото товара: квадрокоптер" width="526" height="334">
-            <div class="slider-textbox">
-              <h2 class="slide-header">Порхает как бабочка, жалит как пчела!</h2>  <!-- Здесь, возможно, лучше не <h2>, а просто <p> -->
-              <p class="slide-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-              <a class="slide-button">Подробнее</a>
-              <ul class="slide-features">
-                <h3 class="visually hidden">Селфи палка: характеристики товара</h3>
-                <li>
-                  <p class="feature-property-value">800 м</p>
-                  <p class="feature-property">Дальность полёта</p>
-                </li>
-                <li>
-                  <p class="feature-property-value">50 м</p>
-                  <p class="feature-property">Радиус поражения</p>
-                </li>
-              </ul>
             </div>
+            <div class="slider-textbox">
+              <h2 class="slide-header">Худеем <br> правильно!</h2>
+              <p class="slide-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не&#160;пропускать&#160;занятия и соблюдать диету.</p>
+              <a class="slide-button">Подробнее</a>
+              <h3 class="visually-hidden">Фитнесc-браслеты: характеристики товара</h3>
+              <table class="slide-features">
+                <tr class="feature-property-value">
+                  <td>48 часов</td>
+                </tr>
+                <tr class="feature-property">
+                  <td>Без подзарядки</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="slide-3">
+            <div class="slide-img">
+              <img src="img/slider-3.png" alt="Фото товара: квадрокоптер" width="526" height="334">
+            </div>
+            <div class="slider-textbox">
+              <h2 class="slide-header">Порхает как&#160;бабочка, жалит как пчела!</h2>  <!-- Здесь, возможно, лучше не <h2>, а просто <p> -->
+              <p class="slide-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным&#160;лазером, замаскированным под стандартную камеру.</p>
+              <a class="slide-button">Подробнее</a>
+              <h3 class="visually-hidden">квадрокоптер: характеристики товара</h3>
+              <table class="slide-features">
+                <tr class="feature-property-value">
+                  <td>800 м</td>
+                  <td>50 м</td>
+                </tr>
+                <tr class="feature-property">
+                  <td>Дальность полёта</td>
+                  <td>Радиус поражения</td>
+                </tr>
+              </table>
+            </div>
+          </div>
           </section>
-          <ul class="slider-switch">
-            <!-- тут будут переключатели, скорее всего радиокнопки, ещё не смотрел как это делать -->
-          </ul>
-          </section>
-        </div>
+        </section>
 
         <section class="catalog-categories">
-          <h2 class="visually hidden">Каталог товаров: категории товаров</h2>
+          <h2 class="visually-hidden">Каталог товаров: категории товаров</h2>
           <a href="#" class="catalog-category-link">
             <div class="icon-block virtual-real">
               <img src="img/svg/virtual-real.svg" alt="Иконка: очки виртуальной реальности" width="97" height="55">
@@ -141,7 +150,7 @@
             <div class="icon-block monopod">
               <img src="img/svg/monopod.svg" alt="Иконка: Моноподы для селфи" width="86" height="117">
             </div>
-            <h3 class="catalog-category-name">Моноподы для селфи</h3>
+            <h3 class="catalog-category-name">Моноподы для&#160;селфи</h3>
           </a>
           <a href="#" class="catalog-category-link">
             <div class="icon-block action-cam">
@@ -172,7 +181,7 @@
         </section>
 
         <section class="services-block">
-          <h2 class="visually hidden">Услуги</h2>
+          <h2 class="visually-hidden">Услуги</h2>
           <ul class="services-slider-switch">
             <!-- тут будут переключатели слайда, сверстаю позже -->
             <li></li>
@@ -299,12 +308,12 @@
     <!-- PopUps -->
     <section class="create-message">
       <form class="message-form" action="https://echo.htmlacademy.ru" method="POST">
-        <input class="user-name" id="user-name" type="text" placeholder="Имя Фамилия">
         <label for="user-name">Ваше Имя:</label>
-        <input class="user-email" id="user-email" type="email" placeholder="email@example.com">
+        <input class="user-name" id="user-name" name="user-name" type="text" placeholder="Имя Фамилия">
         <label for="user-email">Ваш e-mail:</label>
-        <textarea class="message-text" id="message-text" placeholder="В свободной форме"></textarea>
+        <input class="user-email" id="user-email" name="user-email" type="email" placeholder="email@example.com">
         <label for="message-text">Текст письма:</label>
+        <textarea class="message-text" id="message-text" name="message-text" placeholder="В свободной форме"></textarea>
         <button class="submit-button" type="submit">Отправить</button>
       </form>
       <button class="popup-close-button" type="button"></button>

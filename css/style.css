@@ -691,6 +691,7 @@ a {
 .services-block {
   min-height: 390px;
   background-image: linear-gradient(#ffffff 100px, #e5e5e5 100px);
+  margin-bottom: 92px;
 }
 
 .services-slider {
@@ -837,4 +838,48 @@ a {
   background-image: url("../img/svg/credit.svg");
   background-repeat: no-repeat;
   background-position: 671px 5px;
+}
+
+.brand-list {
+  display: flex;
+  justify-content: space-between;
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0;
+
+  list-style: none;
+}
+
+.brand-link {
+  display: block;
+  width: 260px;
+  height: 100px;
+}
+
+.brand-link img {
+  display: block;
+}
+
+.brand-link:hover img {
+  visibility: hidden;
+}
+
+.dji:hover,
+.dji:focus {
+  background-image: url("../img/logo-dji-hover.jpg")
+}
+
+.spgadgets:hover,
+.spgadgets:focus {
+  background-image: url("../img/logo-spgadgets-hover.jpg")
+}
+
+.gopro:hover,
+.gopro:focus {
+  background-image: url("../img/logo-gopro-hover.jpg")
+}
+
+.vive:hover,
+.vive:focus {
+  background-image: url("../img/logo-vive-hover.jpg")
 }

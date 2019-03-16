@@ -176,32 +176,40 @@
             </div>
             <h3 class="catalog-category-name">Квадрокоптеры</h3>
           </a>
-
-
         </section>
 
         <section class="services-block">
-          <h2 class="visually-hidden">Услуги</h2>
-          <ul class="services-slider-switch">
-            <!-- тут будут переключатели слайда, сверстаю позже -->
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-          <div class="services-slider">
-            <section class="delivery-slide">
-              <h3 class="services-header">Доставка</h3>
-              <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-              <!-- Эти иконки думаю фоновые будут-->
-            </section>
-            <section class="garantie-slide">
-              <h3 class="services-header">Гарантия</h3>
-              <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
-            </section>
-            <section class="credit-slide">
-              <h3 class="services-header">Кредит</h3>
-              <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
-            </section>
+
+            <h2 class="visually-hidden">Услуги</h2>
+            <div class="services-slider">
+              <input class="visually-hidden" type="radio" id="slide1" name="services-slider-toggle" checked>
+              <input class="visually-hidden" type="radio" id="slide2" name="services-slider-toggle">
+              <input class="visually-hidden" type="radio" id="slide3" name="services-slider-toggle">
+              <ul class="services-slider-switch">
+                <li>
+                  <label for="slide1">Доставка</label>
+                </li>
+                <li>
+                  <label for="slide2">Гарантия</label>
+                </li>
+                <li>
+                  <label for="slide3">Кредит</label>
+                </li>
+              </ul>
+              <section class="services-slide delivery-slide">
+                <h3 class="services-header">Доставка</h3>
+                <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+                <!-- Эти иконки думаю фоновые будут-->
+              </section>
+              <section class="services-slide warranty-slide">
+                <h3 class="services-header">Гарантия</h3>
+                <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.<br>Товар, не дом, конечно же.</p>
+              </section>
+              <section class="services-slide credit-slide">
+                <h3 class="services-header">Кредит</h3>
+                <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия&#160;кредита. Выгодные для нашего банка, разумеется.</p>
+              </section>
+            </div>
           </div>
         </section>
 

@@ -641,13 +641,18 @@ a {
   border-radius: 50%;
 }
 
+.catalog-categories-container {
+  width: 1440px;
+  margin: 0 auto;
+  margin-bottom: 82px;
+}
+
 .catalog-categories {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   width: 1160px;
   margin: 0 auto;
-  margin-bottom: 82px;
 }
 
 .icon-block {
@@ -700,8 +705,12 @@ a {
 
 /* --- services-block ---- */
 
+
+
 .services-block {
   min-height: 390px;
+  min-width: 1440px;
+  margin: 0 auto;
   background-image: linear-gradient(#ffffff 100px, #e5e5e5 100px);
   margin-bottom: 92px;
 }
@@ -853,6 +862,10 @@ a {
 }
 
 /* ------- Блок с бренд-ссылками -------- */
+.brand-list-container {
+  min-width: 1440px;
+  margin: 0 auto;
+}
 
 .brand-list {
   display: flex;
@@ -901,6 +914,11 @@ a {
 }
 
 /* ---------- "О нас" и "Контакты" --------- */
+
+.information-block-container {
+  min-width: 1440px;
+  margin: 0 auto;
+}
 
 .information-block {
   display: flex;
@@ -1050,6 +1068,8 @@ a {
 /*--- Footer ---*/
 .site-footer {
   background-color: #464646;
+  min-width: 1440px;
+  margin: 0 auto;
 }
 
 .footer-container {
@@ -1296,3 +1316,7 @@ a {
 .modal {
   display: none;
 }
+
+/* ------------ Catalog.html ------------------- */
+
+

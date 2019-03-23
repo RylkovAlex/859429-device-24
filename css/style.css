@@ -1418,7 +1418,7 @@ a {
   min-width: 1440px;
   margin: 0 auto;
 
-  background-image: linear-gradient(to right, #ebebeb 32%, #ffffff 32%);
+  background-image: linear-gradient(to right, #ebebeb 50%, #ffffff 50%);
 }
 
 .filters-container {

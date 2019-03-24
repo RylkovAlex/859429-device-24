@@ -1338,7 +1338,7 @@ a {
   padding-top: 38px;
   padding-left: 60px;
   padding-right: 60px;
-  padding-bottom: 48px;
+  padding-bottom: 47px;
 }
 
 .catalog-category-header h1 {
@@ -1382,7 +1382,7 @@ a {
   min-width: 1440px;
   margin: 0 auto;
 
-  background-image: linear-gradient(to right, #d9d9d9 50%, #ffffff 50%);
+  background-image: linear-gradient(to right, #d9d9d9 50%, #ebebeb 50%);
 }
 
 .sorting-line {
@@ -1395,6 +1395,35 @@ a {
 .filters-header {
   display: block;
   width: 327px;
+  margin: 0;
+  padding: 0;
+  padding-top: 22px;
+  padding-left: 61px;
+  padding-right: 20px;
+  margin-bottom: 24px;
+
+  font-family: 'gilroyextrabold';
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 3.2px;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.sorting {
+  display: flex;
+  width: 833px;
+  padding-top: 22px;
+  padding-left: 75px;
+  padding-bottom: 19px;
+
+  background-color: #ebebeb;
+}
+
+.sorting h2 {
+  margin: 0;
+  padding: 0;
 
   font-family: 'gilroyextrabold';
   font-size: 16px;
@@ -1407,18 +1436,80 @@ a {
 
 .sorting-type {
   display: flex;
-  width: 833px;
+  margin: 0;
+  margin-right: auto;
+  padding: 0;
+  padding-left: 54px;
+  padding-top: 2px;
 
   list-style: none;
 }
 
-.catalog-category-content {
+.sorting-type a {
+  display: block;
+
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-style: normal;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.sorting-type .sorting-type-on {
+  color: #000000;
+}
+
+.sorting-type li {
+  margin: 0;
+  padding: 0;
+  margin-right: 30px;
+}
+
+.sorting-direction {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 6px;
+
+  list-style: none;
+}
+
+.bottom,
+.top {
+  display: block;
+  width: 11px;
+  height: 10px;
+
+  background-image: url("../img/svg/icon-down-dir.svg");
+  opacity: 0.2;
+}
+
+.top {
+  margin-left: 20px;
+}
+
+.bottom {
+  transform: scale(-1);
+}
+
+.sort-active {
+  opacity: 1;
+}
+
+.catalog-category-content {
   min-width: 1440px;
   margin: 0 auto;
 
   background-image: linear-gradient(to right, #ebebeb 50%, #ffffff 50%);
+}
+
+.catalog-category-content-wrapper {
+  display: flex;
+
+  width: 1160px;
+  margin: 0 auto;
 }
 
 .filters-container {
@@ -1427,4 +1518,18 @@ a {
 
 .search-resalts {
   width: 833px;
+  padding-top: 69px;
+  padding-left: 73px;
+
+  background-color: #ffffff;
+}
+
+.items-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 }
